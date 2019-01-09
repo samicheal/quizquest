@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="750.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.questions.QuestionsScreenController">
+    <stylesheets>
+        <URL value="@questionsscreen.css" />
+    </stylesheets>
+   <children>
+      <StackPane layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <MenuBar BorderPane.alignment="CENTER">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Add">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#AddTopic" text="Add topic" />
+                              <MenuItem fx:id="addQMenu" mnemonicParsing="false" onAction="#AddQuestion" text="Add question" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem fx:id="renameTMenu" mnemonicParsing="false" onAction="#RenameTopic" text="Rename topic" />
+                              <MenuItem fx:id="editQMenu" mnemonicParsing="false" onAction="#EditQuestion" text="Edit question" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Delete">
+                        <items>
+                          <MenuItem fx:id="deleteTMenu" mnemonicParsing="false" onAction="#DeleteTopic" text="Delete topic" />
+                              <MenuItem fx:id="deleteQMenu" mnemonicParsing="false" onAction="#DeleteQuestion" text="Delete question" />
+                              <MenuItem fx:id="deleteMultiQMenu" mnemonicParsing="false" onAction="#DeleteMultipleTopics" text="Delete multiple topics" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="375.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXTextField fx:id="searchTopicTxt" focusColor="#fa5252" labelFloat="true" onKeyReleased="#SearchTopics" promptText="Search topic">
+                                 <VBox.margin>
+                                    <Insets bottom="24.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <ScrollPane fx:id="topicsScrollPane" fitToWidth="true" hbarPolicy="NEVER" prefWidth="220.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="220.0">
+                                       <children>
+                                          <VBox fx:id="topicsBox" layoutX="14.0" layoutY="-14.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #fa5252;" text="History" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Mathematics" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Logic" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Python" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Mathematics" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="106.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Logic" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                                <Button layoutX="10.0" layoutY="154.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="220.0" text="Python" textFill="#fa5252">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font></Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <Label fx:id="noTopicsLbl" alignment="CENTER" disable="true" text="There are no topics or questions available. Click the ADD menu to add topics." textAlignment="CENTER" textFill="#fa5252" visible="false" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="topicLbl" alignment="CENTER" prefHeight="45.0" text="History" textFill="#fa5252" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="searchQuestionTxt" focusColor="#fa5252" labelFloat="true" onKeyReleased="#SearchQuestions" prefWidth="240.0" promptText="Search question" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="20.0" layoutY="59.0" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <VBox fx:id="questionsBox" layoutX="50.0" layoutY="14.0" spacing="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In the great battle between the hidden leaf village and the six paths of pain, with what move did the young ninja Naruto defeat Tendo pain?" wrappingWidth="1000.0">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Separator prefWidth="200.0" />
+                                          <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the great battle between the hidden leaf village and the six paths of pain, with what move did the young ninja Naruto defeat Tendo pain?" wrappingWidth="1000.0">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <Label fx:id="noQuestionsLbl" alignment="CENTER" disable="true" layoutX="10.0" layoutY="10.0" text="There are no questions available for this topic. Click the ADD menu to add questions to this topic." textAlignment="CENTER" textFill="#fa5252" visible="false" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

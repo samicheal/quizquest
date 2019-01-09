@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="controller.settings.SettingsController">
+   <children>
+      <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#ChangeUsername" prefHeight="44.0" prefWidth="263.0" ripplerFill="#00000082" styleClass="signupBut" stylesheets="@../mainscreen/mainscreenstyle.css" text="Change username" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="168.0" onAction="#ChangePassword" prefHeight="44.0" prefWidth="263.0" ripplerFill="#00000082" styleClass="signupBut" stylesheets="@../mainscreen/mainscreenstyle.css" text="Change password" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="205.0" onAction="#ClearData" prefHeight="44.0" prefWidth="263.0" ripplerFill="#00000082" styleClass="signupBut" stylesheets="@../mainscreen/mainscreenstyle.css" text="Clear data" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

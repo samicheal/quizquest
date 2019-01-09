@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.quiz.SelectQuestionsController">
+   <children>
+      <Label fx:id="contestant" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="24.0" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: fa5252;" styleClass="Contestantlabel" stylesheets="@StyleSheet.css" text="Contestant" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <VBox fx:id="vBox" alignment="CENTER" layoutX="182.0" layoutY="64.0" prefHeight="296.0" prefWidth="580.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="64.0" />
+      <JFXButton fx:id="backButton" alignment="CENTER" buttonType="RAISED" layoutX="60.0" layoutY="361.0" onAction="#back" prefHeight="25.0" prefWidth="64.0" ripplerFill="#00000084" stylesheets="@StyleSheet.css" text="Back" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="topicLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: fa5252;" styleClass="Contestantlabel" stylesheets="@StyleSheet.css" text="Topic" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

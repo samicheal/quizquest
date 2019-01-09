@@ -1,0 +1,30 @@
+.Contestantlabel{
+    -fx-background-color: rgb(250,82,82);
+    -fx-font-size:15px;
+    -fx-font-weight: bolder;
+}
+
+.selectQuestion{
+    -fx-background-color: rgb(250,82,82);
+    -fx-font-size:22px;
+    -fx-font-weight: bolder;
+}
+
+.button{
+    -fx-background-color: #fa5252;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    
+}
+
+.button:hover{
+    -fx-background-color: rgb(250,0,0);
+    -fx-cursor: hand;
+}
+
+.quest{
+    -fx-border-color: #fa5252;
+    -fx-border-width: 3px;
+    -fx-border-radius: 30;
+    -fx-padding: 10px;
+}

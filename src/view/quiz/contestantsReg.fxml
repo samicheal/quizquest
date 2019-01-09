@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="614.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.quiz.ContestantsRegController">
+   <children>
+      <JFXTextField fx:id="txtFieldNoOfQuestions" alignment="CENTER" focusColor="#fa5252" labelFloat="true" layoutX="58.0" layoutY="194.0" prefHeight="25.0" prefWidth="204.0" promptText="NO OF QUESTIONS" styleClass="textField" stylesheets="@StyleSheet.css" text="2" unFocusColor="#fa5252" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="194.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFieldTime" alignment="CENTER" disable="true" focusColor="#fa5252" labelFloat="true" layoutX="56.0" layoutY="292.0" prefHeight="25.0" prefWidth="204.0" promptText="TIME IN SECONDS" styleClass="textField" stylesheets="@StyleSheet.css" unFocusColor="#fa5252" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="292.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </padding>
+      </JFXTextField>
+      <JFXCheckBox fx:id="randomTopics" checkedColor="#fa5252" layoutX="56.0" layoutY="112.0" onAction="#randomizeTopics" text="RANDOMIZE TOPICS" AnchorPane.topAnchor="112.0" />
+      <JFXTextField fx:id="txtFieldPointsPerQuestion" alignment="CENTER" focusColor="#fa5252" labelFloat="true" layoutX="58.0" layoutY="384.0" prefHeight="25.0" prefWidth="204.0" promptText="POINTS PER QUESTION" styleClass="textField" stylesheets="@StyleSheet.css" text="4" unFocusColor="#fa5252" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="384.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </padding>
+      </JFXTextField>
+      <JFXCheckBox fx:id="timer" checkedColor="#fa5252" layoutX="53.0" layoutY="262.0" onAction="#setTimer" text="SET TIMER" AnchorPane.topAnchor="262.0" />
+      <JFXTextField fx:id="txtFieldBonus" alignment="CENTER" disable="true" focusColor="#fa5252" labelFloat="true" layoutX="60.0" layoutY="498.0" prefHeight="25.0" prefWidth="204.0" promptText="POINTS AWARDED FOR BONUS" styleClass="textField" stylesheets="@StyleSheet.css" unFocusColor="#fa5252" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="498.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </padding>
+      </JFXTextField>
+      <JFXCheckBox fx:id="bonusPoints" checkedColor="#fa5252" layoutX="60.0" layoutY="458.0" onAction="#awardBonus" text="AWARD BONUS POINTS" />
+      <JFXButton fx:id="creatematch" buttonType="RAISED" layoutX="194.0" layoutY="567.0" onAction="#createMatch" prefHeight="37.0" prefWidth="146.0" ripplerFill="#00000086" stylesheets="@StyleSheet.css" text="Create match" AnchorPane.rightAnchor="43.0">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="Contestants" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="194.0" layoutY="85.0" onAction="#contestants" prefHeight="33.0" prefWidth="113.0" ripplerFill="#00000086" stylesheets="@StyleSheet.css" text="Contestants" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="selecttopics" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="53.0" layoutY="85.0" onAction="#selectTopics" prefHeight="33.0" prefWidth="120.0" ripplerFill="#00000086" stylesheets="@StyleSheet.css" text="Select topics" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <Label fx:id="pointsPerQuestionError" layoutX="56.0" layoutY="332.0" prefHeight="17.0" prefWidth="234.0" textFill="#f20000" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" />
+      <Label fx:id="errorForTimer" layoutX="56.0" layoutY="232.0" prefHeight="17.0" prefWidth="238.0" textFill="#f20000" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" />
+      <Label fx:id="errorForBonus" layoutX="58.0" layoutY="421.0" prefHeight="17.0" prefWidth="238.0" textFill="#f20000" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" />
+      <Label fx:id="errorForQuestions" layoutX="54.0" layoutY="163.0" prefHeight="17.0" prefWidth="238.0" textFill="#f20000" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0" />
+   </children>
+</AnchorPane>

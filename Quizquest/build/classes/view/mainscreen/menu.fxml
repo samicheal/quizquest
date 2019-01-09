@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="anchor" stylesheets="@mainscreenstyle.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainscreen.MenuController">
+    <children>
+      <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+      <ImageView fitHeight="250.0" fitWidth="700.0" layoutX="50.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <image>
+            <Image url="@../images/QuizquestLogo.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="184.0" layoutY="241.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <children>
+            <JFXButton buttonType="RAISED" graphicTextGap="60.0" onAction="#CreateMatch" prefHeight="94.0" prefWidth="400.0" ripplerFill="#0000006f" styleClass="menuBut" stylesheets="@mainscreenstyle.css" text="Create match" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/CreateMatch.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" graphicTextGap="40.0" layoutX="10.0" layoutY="10.0" onAction="#ViewQuestions" prefHeight="94.0" prefWidth="400.0" ripplerFill="#0000006f" styleClass="menuBut" stylesheets="@mainscreenstyle.css" text="View questions" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ViewQuestions.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" graphicTextGap="137.0" layoutX="10.0" layoutY="124.0" onAction="#Settings" prefHeight="94.0" prefWidth="400.0" ripplerFill="#0000006f" styleClass="menuBut" stylesheets="@mainscreenstyle.css" text="Settings" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

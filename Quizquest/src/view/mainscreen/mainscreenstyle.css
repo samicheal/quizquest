@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 30, 2017, 12:47:55 PM
+    Author     : YoungDON
+*/
+
+.anchor{
+    -fx-background-image: url('file:C:/Users/user/Documents/NetBeansProjects/Quizquest/src/view/images/QuizquestBackground.png');
+}
+.profBut{
+    -fx-background-color: #33333377;
+    -fx-background-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20px;
+}
+.profBut:hover{
+    -fx-border-color: #fa5252;
+}
+
+.password{
+    -fx-text-fill: #fa5252;
+    -fx-background-colorb: #333333aa;
+    -fx-background-radius: 20px 0px 0px 20px;
+    -fx-border-radius: 20px 0px 0px 20px;
+    -fx-border-width: 2 0 2 2;
+    -fx-border-color: #fa5252;
+}
+.signinBut{
+    -fx-background-color: #fa5252;
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+.signupBut{
+    -fx-background-color: #fa5252;
+    -fx-background-radius: 20px;
+}
+.menuBut{
+    -fx-background-color: #fa5252aa;
+    -fx-background-radius: 15px;
+}
+.signupBut2{
+    -fx-background-color: #33333333;
+    -fx-background-radius: 20px;
+}
+.upvbox{
+    -fx-background-color: #333333aa;
+    -fx-background-radius: 20px;
+}
